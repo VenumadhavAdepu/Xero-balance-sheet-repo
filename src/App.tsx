@@ -1,15 +1,15 @@
 import React from 'react';
 import './App.css';
-import { BalanceSheetProvider } from '../src/client/context/balanceSheetContext'
-import { BalanceSheet } from './client/components/balanceSheet'
+import { TripsProvider } from './context/tripDetailsContext'
+import { TripDetails } from './components/tripDetails'
 
 const App: React.FC = () => {
   return (
-    <BalanceSheetProvider>
-       <div className='App'>
-        <BalanceSheet />
-       </div>
-    </BalanceSheetProvider>
+    <TripsProvider>
+      <div className='App'>
+      <TripDetails />
+      </div>
+    </TripsProvider>
   );
 }
 
